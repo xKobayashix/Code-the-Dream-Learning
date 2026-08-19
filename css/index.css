@@ -1,1 +1,118 @@
+body {
+  background-color: #f4f1ea;
+  color: #333333;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* Background color of the page */
+  background-color: #f4f1ea;
+  color: #2b2b2b;
+
+  /* Custom font family */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 2rem 1.5rem;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 2.5rem 0;
+  background: linear-gradient(90deg, #2f6f5e, #4f9d84);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* =========================================================
+   Headings inside sections: font-size, weight, color
+   ========================================================= */
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2f6f5e;
+  border-bottom: 2px solid #d8d0bd;
+  padding-bottom: 0.4rem;
+  margin-top: 0;
+}
+
+section {
+  margin: 0 auto 2.5rem auto;
+  padding: 1.5rem 1.75rem;
+  max-width: 640px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+#About {
+  text-align: center;
+}
+
+#About p {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+#Experience ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#Experience li {
+  padding: 0.9rem 1.1rem;
+  background-color: #f4f1ea;
+  border-left: 4px solid #2f6f5e;
+  border-radius: 6px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#Experience li:hover {
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#Connect ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+#Connect a {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  background-color: #2f6f5e;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+#Connect a:hover,
+#Connect a:focus-visible {
+  background-color: #244f42;
+  transform: translateY(-2px);
+}
