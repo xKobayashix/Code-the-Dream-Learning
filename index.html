@@ -35,3 +35,182 @@
     </section>
   </body>
 </html>
+
+/* =========================================================
+   1. Global reset + custom font family
+   ========================================================= */
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap');
+
+body {
+  /* 2. Background color of the page */
+  background-color: #f4f1ea;
+
+  /* 3. Default text color */
+  color: #2b2b2b;
+
+  /* 4. Custom font family (Inter for body copy, Poppins for headings below) */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 2rem 1.5rem;
+}
+
+/* =========================================================
+   Site header / Name treatment
+   ========================================================= */
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.profile-photo {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2f6f5e;
+}
+
+/* Placeholder circle shown until a real <img> replaces it */
+.profile-photo--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2f6f5e;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+}
+
+/* 7. Transform the style of the name at the top of the page */
+.site-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  background: linear-gradient(90deg, #2f6f5e, #4f9d84);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* =========================================================
+   6. Headings: font-size, weight, and color
+   ========================================================= */
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2f6f5e;
+  border-bottom: 2px solid #d8d0bd;
+  padding-bottom: 0.4rem;
+  margin-top: 0;
+}
+
+/* =========================================================
+   5. Spacing between sections
+   ========================================================= */
+section {
+  margin: 0 auto 2.5rem auto;
+  padding: 1.5rem 1.75rem;
+  max-width: 640px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* 8. Alignment of one section's content (About is centered) */
+#About {
+  text-align: center;
+}
+
+#About p {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   9. Experience list items transformed into styled blocks
+   ========================================================= */
+.experience-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.9rem 1.1rem;
+  background-color: #f4f1ea;
+  border-left: 4px solid #2f6f5e;
+  border-radius: 6px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.experience-item:hover {
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.experience-tool {
+  font-weight: 600;
+  color: #2f6f5e;
+  font-family: 'Poppins', sans-serif;
+}
+
+.experience-detail {
+  font-size: 0.92rem;
+  color: #55534d;
+}
+
+/* =========================================================
+   10. Connect links styled as pill buttons with icons
+   ========================================================= */
+.connect-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.connect-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  background-color: #2f6f5e;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.connect-link:hover,
+.connect-link:focus-visible {
+  background-color: #244f42;
+  transform: translateY(-2px);
+}
+
+.connect-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
